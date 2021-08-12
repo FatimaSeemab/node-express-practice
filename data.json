@@ -1,0 +1,160 @@
+{
+    "status": true,
+    "message": " User details ",
+    "data": [
+        {
+            "user_profile_id": 11,
+            "user_profile_farm_types": "[LiveStock, Agriculture]",
+            "user_profile_telephone": "03235566789",
+            "user_profile_language": "en",
+            "user_profile_user_id": 17,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 13,
+            "user_profile_farm_types": "[LiveStock, Agriculture, Orchard, Poultry, Aquaculture]",
+            "user_profile_telephone": "+923217501224",
+            "user_profile_language": "",
+            "user_profile_user_id": 152,
+            "user_name": "Saeed Akthar",
+            "user_cnic": null,
+            "user_image": "https://firebasestorage.googleapis.com/v0/b/farmex-xypher.appspot.com/o/profileImages%2F20210618T193145.jpg?alt=media&token=163e667e-285f-4c30-a5f1-918b0da4c657",
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 14,
+            "user_profile_farm_types": "[Agriculture, LiveStock]",
+            "user_profile_telephone": "+923315944494",
+            "user_profile_language": "en",
+            "user_profile_user_id": 144,
+            "user_name": "user",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 15,
+            "user_profile_farm_types": "[Agriculture]",
+            "user_profile_telephone": "+923114338893",
+            "user_profile_language": "ur",
+            "user_profile_user_id": 133,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 16,
+            "user_profile_farm_types": "[Agriculture, LiveStock, Poultry]",
+            "user_profile_telephone": "+923230000000",
+            "user_profile_language": "en",
+            "user_profile_user_id": 65,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 18,
+            "user_profile_farm_types": "[LiveStock, Aquaculture, Poultry, Agriculture, Orchard]",
+            "user_profile_telephone": "+923433331115",
+            "user_profile_language": "ur",
+            "user_profile_user_id": 132,
+            "user_name": "mujtaba",
+            "user_cnic": null,
+            "user_image": "https://firebasestorage.googleapis.com/v0/b/farmex-xypher.appspot.com/o/profileImages%2F20210616T185355.jpg?alt=media&token=6e528130-e72c-4bc6-bcf8-ac6dcf186b9f",
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 20,
+            "user_profile_farm_types": "[LiveStock]",
+            "user_profile_telephone": "+923237585858",
+            "user_profile_language": "ur",
+            "user_profile_user_id": 134,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 21,
+            "user_profile_farm_types": "[Agriculture, LiveStock, Poultry]",
+            "user_profile_telephone": "+923217572262",
+            "user_profile_language": "ur",
+            "user_profile_user_id": 135,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 22,
+            "user_profile_farm_types": "[LiveStock]",
+            "user_profile_telephone": "+923361813881",
+            "user_profile_language": "en",
+            "user_profile_user_id": 136,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 25,
+            "user_profile_farm_types": "[LiveStock]",
+            "user_profile_telephone": "+923125019623",
+            "user_profile_language": "ur",
+            "user_profile_user_id": 145,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 27,
+            "user_profile_farm_types": "[Agriculture, LiveStock]",
+            "user_profile_telephone": "+923005046611",
+            "user_profile_language": "en",
+            "user_profile_user_id": 147,
+            "user_name": "Default User",
+            "user_cnic": null,
+            "user_image": null,
+            "created_on": "2021-06-11T12:27:40.871Z"
+        },
+        {
+            "user_profile_id": 28,
+            "user_profile_farm_types": "[Orchard, Agriculture, LiveStock, Poultry, Aquaculture]",
+            "user_profile_telephone": "+921111111111",
+            "user_profile_language": "en",
+            "user_profile_user_id": 172,
+            "user_name": "hehehehe",
+            "user_cnic": "1111111111113",
+            "user_image": "https://firebasestorage.googleapis.com/v0/b/farmex-xypher.appspot.com/o/profileImages%2F20210615T150924.jpg?alt=media&token=ada43ff9-1f8d-46dc-a093-33e7f1a0008e",
+            "created_on": "2021-06-15T08:58:23.120Z"
+        },
+        {
+            "user_profile_id": 30,
+            "user_profile_farm_types": "[LiveStock, Aquaculture, Orchard, Poultry, Agriculture]",
+            "user_profile_telephone": "12345667",
+            "user_profile_language": "en",
+            "user_profile_user_id": 7,
+            "user_name": "Default User",
+            "user_cnic": "6110116017543",
+            "user_image": null,
+            "created_on": "2021-06-24T12:31:34.105Z"
+        },
+        {
+            "user_profile_id": 31,
+            "user_profile_farm_types": "[LiveStock]",
+            "user_profile_telephone": "+923105555334",
+            "user_profile_language": "",
+            "user_profile_user_id": 250,
+            "user_name": "eusha",
+            "user_cnic": "1234567891234",
+            "user_image": null,
+            "created_on": "2021-08-04T10:58:26.170Z"
+        }
+    ]
+}
