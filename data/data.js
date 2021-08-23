@@ -17,10 +17,13 @@ function getdata() {
         });
     });
 }
-function postdata(name) {
+function postdata(req) {
     return new Promise(function (resolve, reject) {
         console.log("post data is called")
-        let sql = `insert into course(name) values('${name}');`;
+        
+        console.log("pic");
+        console.log(req.body.title, req.body.desc, req.body.headline, req.body.pic, req.body.Files)
+        let sql = `insert into data(title,Description,headline,image,tags,files) values('${req.body.title}', '${req.body.desc}', '${req.body.headline}','${req.body.pic}','${req.body.Tags}','');`;
         db.query(sql, function (err, courses) {
             if (err) return reject(err);
             else return resolve(courses);

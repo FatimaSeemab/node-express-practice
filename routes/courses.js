@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const handler = require("../handlers/handler")
 //Getting connection
+
 router.get("/", handler.connection)
 //Getting data
 router.get("/getcourses", handler.getcourses)

@@ -17,29 +17,40 @@ async function getcourses(req, res) {
 
 //Post courses
 async function postcourses(req, res) {
-
-    const schema = { name: Joi.string().min(1).required() };
-    const result = Joi.validate(req.body.name, schema)
-    console.log("post method is called")
-    if (result.error) {
-        res.status(400).send(result.error)
-        return
-    }
-    try {
-        let name = req.body.name;
-        console.log(name)
-        const course = await dal.postdata(name);
-        res.send(course)
-    }
-    catch (error) {
-        res.send(error)
-    }
+    var fstream;
+    req.pipe(req.busboy);
+    req.busboy.on('file', function (fieldname, file, filename) {
+        console.log("Uploading: " + filename);
+        fstream = fs.createWriteStream(__dirname + '/files/' + filename);
+        file.pipe(fstream);
+        fstream.on('close', function () {
+            res.redirect('back');
+            // const schema = { title: Joi.string().min(1).required() };
+            // const result = Joi.validate(req.body.title, schema)
+            console.log("post method is called")
+            // if (result.error) {
+            //     res.status(400).send(result.error)
+            //     return
+            // }
+            // try {
+            //     let pic = req.files.dp;
+            //     clg(pic)
+            //     console.log(req.body);
+            //     const course = await dal.postdata(req);
+            //     res.send(course)
+            // }
+            // catch (error) {
+            //     res.send(error)
+            // }
+        });
+    });
 }
 //Put Courses
 async function putcourses(req, res) {
     let name = req.body.name;
     console.log("put is called")
     id = req.params.id
+
     try {
         const course = await dal.putdata(name, id)
         res.send(course)
@@ -83,13 +94,13 @@ async function getbyid(req, res) {
         res.send(error)
     }
 
-}
-module.exports = {
-    getcourses,
-    postcourses,
-    putcourses,
-    delcourses,
-    getbyid,
-    postquerystrings,
-    connection
-};
+        }
+        module.exports = {
+            getcourses,
+            postcourses,
+            putcourses,
+            delcourses,
+            getbyid,
+            postquerystrings,
+            connection
+        };
