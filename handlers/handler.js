@@ -1,6 +1,10 @@
 const Joi = require('joi');
 const dal = require("../data/data")
+const multer = require('multer')
 //creating connection
+const uploads = multer({
+    dest: './public',
+})
 const connection = (req, res) => {
     res.send("Connection created");
 }
@@ -25,25 +29,29 @@ async function postcourses(req, res) {
     //     file.pipe(fstream);
     //     fstream.on('close', function () {
     //         res.redirect('back');
-            // const schema = { title: Joi.string().min(1).required() };
-            // const result = Joi.validate(req.body.title, schema)
-            // console.log("post method is called")
-            // if (result.error) {
-            //     res.status(400).send(result.error)
-            //     return
-            // }
-            try {
-                let pic = req.files.dp;
-                clg(pic)
-                console.log(req.body);
-                const course = await dal.postdata(req);
-                res.send(course)
-            }
-            catch (error) {
-                res.send(error)
-            }
-        });
-    });
+    // const schema = { title: Joi.string().min(1).required() };
+    // const result = Joi.validate(req.body.title, schema)
+    console.log("post method is called")
+    // if (result.error) {
+    //     res.status(400).send(result.error)
+    //     return
+    // }
+    // uploads.single("profile");
+    console.log("uploads", req.file)
+    res.send(req.file)
+    // try {
+    //     let pic = req.files.uploads;
+    //     console.log("post method is called");
+    //     clg(pic)
+    //     console.log(req.body);
+    //     const course = await dal.postdata(req);
+    //     res.send(course)
+    // }
+    // catch (error) {
+    //     res.send(error)
+    // }
+    //     });
+    // });
 }
 //Put Courses
 async function putcourses(req, res) {
@@ -94,13 +102,13 @@ async function getbyid(req, res) {
         res.send(error)
     }
 
-        }
-        module.exports = {
-            getcourses,
-            postcourses,
-            putcourses,
-            delcourses,
-            getbyid,
-            postquerystrings,
-            connection
-        };
+}
+module.exports = {
+    getcourses,
+    postcourses,
+    putcourses,
+    delcourses,
+    getbyid,
+    postquerystrings,
+    connection
+};
