@@ -17,31 +17,31 @@ async function getcourses(req, res) {
 
 //Post courses
 async function postcourses(req, res) {
-    var fstream;
-    req.pipe(req.busboy);
-    req.busboy.on('file', function (fieldname, file, filename) {
-        console.log("Uploading: " + filename);
-        fstream = fs.createWriteStream(__dirname + '/files/' + filename);
-        file.pipe(fstream);
-        fstream.on('close', function () {
-            res.redirect('back');
+    // var fstream;
+    // req.pipe(req.busboy);
+    // req.busboy.on('file', function (fieldname, file, filename) {
+    //     console.log("Uploading: " + filename);
+    //     fstream = fs.createWriteStream(__dirname + '/files/' + filename);
+    //     file.pipe(fstream);
+    //     fstream.on('close', function () {
+    //         res.redirect('back');
             // const schema = { title: Joi.string().min(1).required() };
             // const result = Joi.validate(req.body.title, schema)
-            console.log("post method is called")
+            // console.log("post method is called")
             // if (result.error) {
             //     res.status(400).send(result.error)
             //     return
             // }
-            // try {
-            //     let pic = req.files.dp;
-            //     clg(pic)
-            //     console.log(req.body);
-            //     const course = await dal.postdata(req);
-            //     res.send(course)
-            // }
-            // catch (error) {
-            //     res.send(error)
-            // }
+            try {
+                let pic = req.files.dp;
+                clg(pic)
+                console.log(req.body);
+                const course = await dal.postdata(req);
+                res.send(course)
+            }
+            catch (error) {
+                res.send(error)
+            }
         });
     });
 }
